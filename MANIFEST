@@ -1,0 +1,12 @@
+Build.PL
+lib/Config/Any/TT2.pm
+Makefile.PL
+MANIFEST			This list of files
+META.yml
+README
+t/01-use.t
+t/02-tt2.t
+t/conf/conf.tt2
+t/invalid/conf.tt2
+t/pod-coverage.t
+t/pod.t

@@ -1,0 +1,42 @@
+NAME
+    Config::Any::TT2 - Plugin for Config::TT2 files
+
+DESCRIPTION
+    Loads Config::TT2 files. Example:
+
+      [%                        # tt2 directive start-tag
+        scalar = 'string'
+
+        array = [ 10 20 30 ]    # commas are optional
+        rev   = array.reverse   # powerful virtual methods
+        item  = array.0         # interpolate previous value
+
+        hash = { foo = 'bar'    # hashes to any depth
+                 moo = array    # points to above arrayref
+               }
+      %]                        # tt2 directive end-tag
+
+METHODS
+  extensions( )
+    return an array of valid extensions ("tt2", "tt").
+
+  load( $file )
+    Attempts to load $file via Config::TT2.
+
+  requires_all_of( )
+    Specifies that this module requires Config::TT2 in order to work.
+
+AUTHOR
+    Karl Gaissmaier <gaissmai@cpan.org>
+
+COPYRIGHT AND LICENSE
+    Copyright 2012 by Karl Gaissmaier
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+SEE ALSO
+    *   Config::Any
+
+    *   Config::TT2
+
