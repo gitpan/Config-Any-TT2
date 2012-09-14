@@ -15,11 +15,11 @@ name: Config-Any-TT2
 provides:
   Config::Any::TT2:
     file: lib/Config/Any/TT2.pm
-    version: 0.10
+    version: 0.11
 requires:
   Config::Any: 0
   Config::TT2: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/gaissmai/Config-Any-TT2.git
-version: 0.10
+version: 0.11
