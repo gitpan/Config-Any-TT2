@@ -1,5 +1,20 @@
 NAME
-    Config::Any::TT2 - Plugin for Config::TT2 files
+    Config::Any::TT2 - Config::Any plugin for Config::TT2 files
+
+SYNOPSIS
+        use Config::Any;
+
+        my $cfg_file = 'cfg.tt2';
+
+        my $configs = Config::Any->load_files(
+            {
+                files           => [$cfg_file],
+                flatten_to_hash => 1,
+                use_ext         => 1,
+            }
+        );
+
+        my $cfg = $configs->{$cfg_file};
 
 DESCRIPTION
     Loads Config::TT2 files. Example:
